@@ -3,5 +3,8 @@
 !*.min.css
 !*.min.js
 !index.html
+!js/
+!js/**/
+!js/**/**/*.html
 !LICENSE
 !README.md
