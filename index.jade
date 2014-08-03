@@ -7,7 +7,10 @@ html(ng-app='demoApp', lang='en')
     title='Atomic Directive Demo'
 
     each style in styles
-      link(rel='stylesheet/' + style.substr(style.lastIndexOf('.') + 1) href=style)
+      if style.indexOf('.less') !== -1
+        link(rel='stylesheet/less', href=style)
+      else
+        link(rel='stylesheet', href=style)
 
     each script in scripts
       script(src=script)

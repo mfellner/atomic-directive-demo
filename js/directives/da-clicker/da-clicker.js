@@ -7,17 +7,17 @@
       replace: true,
       templateUrl: 'js/directives/da-clicker/da-clicker.html',
       scope: {},
-      controller: function($scope) {
-        $scope.count = 0;
+      controller: ['$scope', function($scope) {
+          $scope.count = 0;
 
-        $scope.isPrime = function(number) {
-          var start = 2;
-          while (start <= Math.sqrt(number)) {
-            if (number % start++ < 1) return false;
-          }
-          return number > 1;
-        };
-      }
+          $scope.isPrime = function(number) {
+            var start = 2;
+            while (start <= Math.sqrt(number)) {
+              if (number % start++ < 1) return false;
+            }
+            return number > 1;
+          };
+        }]
     };
   });
 
