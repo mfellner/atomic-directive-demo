@@ -1,0 +1,11 @@
+{
+  "name": "atomic-directive-demo",
+  "version": "0.1.0",
+  "authors": [
+    "Maximilian Fellner <max.fellner@gmail.com>"
+  ],
+  "description": "Atomic AngularJS directives demo.",
+  "main": "src/main.js",
+  "license": "ISC",
+  "private": true
+}
