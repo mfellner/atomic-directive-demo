@@ -1,0 +1,21 @@
+// Mixins.less
+// Various mixins to be reused throughout the application.
+
+.button(@bgColor: #ababab, @txtColor: #ffffff) {
+
+  outline: 0;
+  border: none;
+  padding: 10px 20px;
+  background-color: @bgColor;
+  color: @txtColor;
+  text-decoration: none;
+
+  &:hover {
+    background-color: lighten(@bgColor, 5%);
+  }
+
+  &:active {
+    background-color: lighten(@bgColor, 10%);
+  }
+
+}

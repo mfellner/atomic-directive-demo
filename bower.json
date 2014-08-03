@@ -5,7 +5,13 @@
     "Maximilian Fellner <max.fellner@gmail.com>"
   ],
   "description": "Atomic AngularJS directives demo.",
-  "main": "src/main.js",
+  "main": "js/main.js",
   "license": "ISC",
-  "private": true
+  "private": true,
+  "devDependencies": {
+    "angular": "~1.2.21",
+    "less": "~1.7.4",
+    "bootstrap": "~3.2.0",
+    "colors": "~2.0.0"
+  }
 }

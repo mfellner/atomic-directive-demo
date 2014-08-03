@@ -1,0 +1,26 @@
+// Components.less
+// Styles for components of this application.
+
+@import (reference) "/bower_components/colors/less/colors";
+@import (reference) "/js/directives/da-clicker/da-clicker";
+@import (reference) "mixins";
+
+.da-clicker:extend(.da-clicker all) {
+
+  button {
+    .button(@orange);
+  }
+  button+button {
+    .button(@olive);
+  }
+
+  button+span {
+    margin-left: 20px;
+  }
+
+  .primeNumber {
+    color: @red;
+    font-weight: bold;
+  }
+
+}
