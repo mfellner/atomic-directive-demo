@@ -1,0 +1,24 @@
+doctype html
+
+html(ng-app='demoApp', lang='en')
+  head
+    meta(charset='utf-8')
+
+    title='Atomic Directive Demo'
+
+    each style in styles
+      link(rel='stylesheet/' + style.substr(style.lastIndexOf('.') + 1) href=style)
+
+    each script in scripts
+      script(src=script)
+
+  body
+
+    div(class='container')
+
+      div(class='page-header')
+        h3='Atomic AngularJS Directive Demo'
+
+      div(class='row')
+        div(class='col-sm-6')
+          da-clicker()

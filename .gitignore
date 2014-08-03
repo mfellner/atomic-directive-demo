@@ -1,5 +1,8 @@
 ### misc. files ###
 use-node.sh
+index.html
+**/*.min.js
+**/*.min.css
 
 ### OSX ###
 .DS_Store
